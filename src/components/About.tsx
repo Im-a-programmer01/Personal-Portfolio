@@ -44,7 +44,7 @@ export default function About() {
           </div>
 
           <div>
-            <p className="text-lg text-dark-teal/80 dark:text-slate-300 leading-relaxed mb-8 transition-colors duration-300">
+            <p className="text-lg text-dark-teal/80 dark:text-slate-300 leading-relaxed mb-8 transition-colors duration-300 text-justify">
               AI Automation Specialist & No-Code Expert helping businesses eliminate manual work and scale efficiently. Certified in Zapier, Make.com, n8n, GoHighLevel, WordPress, and Prompt Engineering. I build reliable end-to-end workflows that connect apps, automate CRM pipelines, capture leads, and integrate AI—saving clients 10-30+ hours/week. Detail-oriented, fast learner, and collaborative—ready to deliver practical, documented solutions for remote teams.
             </p>
 

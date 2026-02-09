@@ -8,7 +8,6 @@ interface Project {
   tags: string[];
   category: string[];
   screenshots: string[];
-  loomLinks?: string[];
 }
 
 const projects: Project[] = [

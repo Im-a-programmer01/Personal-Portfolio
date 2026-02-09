@@ -350,6 +350,17 @@ export default function Projects() {
             </div>
 
             <div className="p-6 md:p-8 bg-white dark:bg-slate-800">
+              <div className="flex flex-wrap gap-2 mb-8">
+                {selectedProject.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="px-4 py-2 text-sm font-medium bg-blue-50 dark:bg-slate-700 text-blue-700 dark:text-blue-300 rounded-full border border-blue-200 dark:border-slate-600"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
               <div className="mb-8">
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-light-cream mb-4">Video Walkthrough</h4>
                 <div className="rounded-xl overflow-hidden shadow-lg">
@@ -362,17 +373,6 @@ export default function Projects() {
                     />
                   </div>
                 </div>
-              </div>
-
-              <div className="flex flex-wrap gap-2 mb-6">
-                {selectedProject.tags.map((tag, tagIndex) => (
-                  <span
-                    key={tagIndex}
-                    className="px-4 py-2 text-sm font-medium bg-blue-50 dark:bg-slate-700 text-blue-700 dark:text-blue-300 rounded-full border border-blue-200 dark:border-slate-600"
-                  >
-                    {tag}
-                  </span>
-                ))}
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">

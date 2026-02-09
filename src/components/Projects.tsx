@@ -350,7 +350,7 @@ export default function Projects() {
             </div>
 
             <div className="p-6 md:p-8 bg-white dark:bg-slate-800">
-              <div className="flex flex-wrap gap-2 mb-8">
+              <div className="flex flex-wrap gap-2 mb-6">
                 {selectedProject.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
@@ -361,7 +361,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {selectedProject.screenshots.map((screenshot, idx) => (
                   <button
                     key={idx}
@@ -379,20 +379,6 @@ export default function Projects() {
                     />
                   </button>
                 ))}
-              </div>
-
-              <div className="mb-8">
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-light-cream mb-4">Video Walkthrough</h4>
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                    <iframe
-                      src="https://www.loom.com/embed/7451ffd1a95e49d88c0c1539a7b4ff35"
-                      frameBorder="0"
-                      allowFullScreen
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>

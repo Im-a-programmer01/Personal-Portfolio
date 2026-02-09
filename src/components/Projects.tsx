@@ -77,7 +77,7 @@ const projects: Project[] = [
   {
     title: 'Multi-Channel Lead/Web Form Automation Hub',
     description: 'Instantly capture webhook data → log full details in Google Sheets → route notifications to Slack team channels → auto-create engaging posts on Facebook Pages → optionally call APIs via HTTP/JSON. Turn inquiries into action + social visibility with zero manual work—great for lead gen, support, or marketing teams.',
-    image:     'https://drive.google.com/thumbnail?id=1GijI3tIJKYaHTHCXBZTbhncT3ZRUqgha&sz=w800',
+    image:     'https://drive.google.com/thumbnail?id=1_PhIc_QOqda-OsLUBc79m1xwIWiE46-3&sz=w800',
     tags: ['Webhooks', 'Google Sheets', 'Slack', 'Facebook Pages', 'HTTP Request', 'Parse JSON'],
     category: ['Make.com'],
     screenshots: [
@@ -87,7 +87,7 @@ const projects: Project[] = [
   {
     title: 'Automated Gmail Attachment Processing System',
     description: 'Automatically monitors incoming Gmail emails for attachments and processes them without manual effort. When a new email arrives, the attachment is extracted, analyzed, and renamed using AI for better organization. The file is then securely uploaded to Google Drive, relevant details are logged into Google Sheets, and a confirmation email is sent back to the user. This automation saves time, reduces errors, and ensures all email attachments are properly stored, tracked, and acknowledged in one seamless flow.',
-    image:     'https://drive.google.com/thumbnail?id=1pcJC6w11Nm_WFD6wCim1pZM_17QIvd_1&sz=w800',
+    image:     'https://drive.google.com/thumbnail?id=1_PhIc_QOqda-OsLUBc79m1xwIWiE46-3&sz=w800',
     tags: ['Webhooks', 'Google Sheets', 'Slack', 'Facebook Pages', 'HTTP Request', 'Parse JSON'],
     category: ['Make.com'],
     screenshots: [

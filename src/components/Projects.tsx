@@ -68,8 +68,7 @@ const projects: Project[] = [
       'https://drive.google.com/thumbnail?id=1xRwHVIG4qVb0tiUAMP3v1E60S5iSXBMl&sz=w800',
       'https://drive.google.com/thumbnail?id=1i8kmBydNG2s968sOZFmWZMHAL0DQRNVA&sz=w800'
     ],
-    loomLinks: [
-    ],
+    loomLinks: [],
   },
   {
     title: 'Asana Completion to Xero Invoice',

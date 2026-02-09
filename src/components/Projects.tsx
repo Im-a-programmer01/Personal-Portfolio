@@ -8,6 +8,7 @@ interface Project {
   tags: string[];
   category: string[];
   screenshots: string[];
+  loomLinks: string[];
 }
 
 const projects: Project[] = [
@@ -20,6 +21,7 @@ const projects: Project[] = [
     screenshots: [
       'https://drive.google.com/thumbnail?id=1sX6PqajBHhXKPdyNilVG9H7TIQz3FRbn&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Priority-Based Lead Enrichment Workflow',
@@ -31,6 +33,7 @@ const projects: Project[] = [
       'https://drive.google.com/thumbnail?id=1asCueEZxkSiWNqf7upuLuAiCIvHX49GG&sz=w800',
       'https://drive.google.com/thumbnail?id=1G_XSnRXNHfzO-dKv7D8bQtUFaaq2waku&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Multi-Path Lead Nurture & Close Workflow',
@@ -41,6 +44,7 @@ const projects: Project[] = [
     screenshots: [
        'https://drive.google.com/thumbnail?id=1XPhO1Kp26zgNaMxqFUkB9eaJ7QZNegbx&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Intelligent Multi-Channel Content Engine',
@@ -52,6 +56,7 @@ const projects: Project[] = [
       'https://drive.google.com/thumbnail?id=1xkhMQwBDyexVdcL4L6djKL3puyXKmh7w&sz=w800',
       'https://drive.google.com/thumbnail?id=1G_XSnRXNHfzO-dKv7D8bQtUFaaq2waku&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Smart Retail Price Analyzer with AI Insights',
@@ -63,6 +68,7 @@ const projects: Project[] = [
       'https://drive.google.com/thumbnail?id=1xRwHVIG4qVb0tiUAMP3v1E60S5iSXBMl&sz=w800',
       'https://drive.google.com/thumbnail?id=1i8kmBydNG2s968sOZFmWZMHAL0DQRNVA&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Asana Completion to Xero Invoice',
@@ -73,6 +79,7 @@ const projects: Project[] = [
     screenshots: [
        'https://drive.google.com/thumbnail?id=1_PhIc_QOqda-OsLUBc79m1xwIWiE46-3&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Multi-Channel Lead/Web Form Automation Hub',
@@ -83,6 +90,7 @@ const projects: Project[] = [
     screenshots: [
       'https://drive.google.com/thumbnail?id=1GijI3tIJKYaHTHCXBZTbhncT3ZRUqgha&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Automated Gmail Attachment Processing System',
@@ -93,6 +101,7 @@ const projects: Project[] = [
     screenshots: [
       'https://drive.google.com/thumbnail?id=1pcJC6w11Nm_WFD6wCim1pZM_17QIvd_1&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'AI-Powered Daily Weather Quote Automation',
@@ -103,6 +112,7 @@ const projects: Project[] = [
     screenshots: [
       'https://drive.google.com/thumbnail?id=11RPVycrN11BGJKrmS8-G-t8PZROSkw9z&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'Smart Knowledge Base Chatbot for Facebook Pages',
@@ -113,6 +123,7 @@ const projects: Project[] = [
     screenshots: [
       'https://drive.google.com/thumbnail?id=1AvQqkMWK6suq4BWe_fp6z-TrAgZ9r5bL&sz=w800'
     ],
+    loomLinks: [],
   },
   {
     title: 'AI Appointment Setter & Smart Booking Automation',
@@ -124,6 +135,7 @@ const projects: Project[] = [
       'https://drive.google.com/thumbnail?id=1MN01rtihdfZiivF8Tc0BfFSUwABsD5MP&sz=w800',
       'https://drive.google.com/thumbnail?id=1xLEJfhgGqNWV4aTv6koYZNOA8TKmwRdm&sz=w800'
     ],
+    loomLinks: [],
   },
 ];
 
@@ -350,6 +362,21 @@ export default function Projects() {
             </div>
 
             <div className="p-6 md:p-8 bg-white dark:bg-slate-800">
+              {selectedProject.loomLinks.length > 0 && (
+                <div className="mb-6 space-y-4">
+                  {selectedProject.loomLinks.map((link, idx) => (
+                    <div key={idx} className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-200 dark:border-slate-600">
+                      <iframe
+                        src={link}
+                        frameBorder="0"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+
               <div className="flex flex-wrap gap-2 mb-6">
                 {selectedProject.tags.map((tag, tagIndex) => (
                   <span

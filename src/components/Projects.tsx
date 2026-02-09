@@ -314,7 +314,7 @@ export default function Projects() {
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-light-cream mb-2">
                   {selectedProject.title}
                 </h3>
-                <p className="text-gray-600 dark:text-slate-300">{selectedProject.description}</p>
+                <p className="text-gray-600 dark:text-slate-300 text-justify">{selectedProject.description}</p>
               </div>
               <button
                 onClick={closeModal}
@@ -362,21 +362,6 @@ export default function Projects() {
             </div>
 
             <div className="p-6 md:p-8 bg-white dark:bg-slate-800">
-              {selectedProject.loomLinks.length > 0 && (
-                <div className="mb-6 space-y-4">
-                  {selectedProject.loomLinks.map((link, idx) => (
-                    <div key={idx} className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-200 dark:border-slate-600">
-                      <iframe
-                        src={link}
-                        frameBorder="0"
-                        allowFullScreen
-                        className="absolute inset-0 w-full h-full"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
-
               <div className="flex flex-wrap gap-2 mb-6">
                 {selectedProject.tags.map((tag, tagIndex) => (
                   <span
@@ -388,7 +373,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
                 {selectedProject.screenshots.map((screenshot, idx) => (
                   <button
                     key={idx}
@@ -407,6 +392,24 @@ export default function Projects() {
                   </button>
                 ))}
               </div>
+
+              {selectedProject.loomLinks.length > 0 && (
+                <div className="space-y-4">
+                  <h4 className="text-2xl font-bold text-gray-900 dark:text-light-cream">
+                    Walkthrough
+                  </h4>
+                  {selectedProject.loomLinks.map((link, idx) => (
+                    <div key={idx} className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-200 dark:border-slate-600">
+                      <iframe
+                        src={link}
+                        frameBorder="0"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const skills = [
     description: 'Triggers, formatter, delay, filter, paths, looping, sub-zaps, webhooks, AI by Zapier.',
     icon: Zap,
     gradient: 'from-[#35524A] to-[#5D2A42]',
-    certificate: '/certificates/zapier_certificate.png',
+    certificate: './certificates/zapier_certificate.png',
   },
   {
     name: 'Make.com',

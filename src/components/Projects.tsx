@@ -69,7 +69,7 @@ const projects: Project[] = [
       'https://drive.google.com/thumbnail?id=1i8kmBydNG2s968sOZFmWZMHAL0DQRNVA&sz=w800'
     ],
     loomLinks: [
-      'https://www.loom.com/share/7451ffd1a95e49d88c0c1539a7b4ff35'
+      '<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/7451ffd1a95e49d88c0c1539a7b4ff35" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     ],
   },
   {

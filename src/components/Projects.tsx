@@ -56,7 +56,7 @@ const projects: Project[] = [
       'https://drive.google.com/thumbnail?id=1xkhMQwBDyexVdcL4L6djKL3puyXKmh7w&sz=w800',
       'https://drive.google.com/thumbnail?id=1G_XSnRXNHfzO-dKv7D8bQtUFaaq2waku&sz=w800'
     ],
-    loomLinks: [],
+       loomLinks: ['https://www.loom.com/embed/7451ffd1a95e49d88c0c1539a7b4ff35'],
   },
   {
     title: 'Smart Retail Price Analyzer with AI Insights',

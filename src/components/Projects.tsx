@@ -82,7 +82,7 @@ const projects: Project[] = [
     category: ['Make.com'],
     screenshots: [
       'https://drive.google.com/thumbnail?id=1GijI3tIJKYaHTHCXBZTbhncT3ZRUqgha&sz=w800'
-    ],https://drive.google.com/file/d/1GijI3tIJKYaHTHCXBZTbhncT3ZRUqgha/view?usp=drive_link
+    ],
   },
   {
     title: 'Automated Gmail Attachment Processing System',
